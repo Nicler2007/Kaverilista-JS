@@ -29,6 +29,7 @@
 let itemList = document.querySelector('#main ul');
 console.log(itemList);
 
+
 // Parent
 
 // parentnode
@@ -37,3 +38,32 @@ itemList.parentNode.style.backgroundColor = "#f4f4f4";
 // parentElement
 itemList.parentElement.style.backgroundColor = "yellow";
 
+
+// Children
+
+// childNodes
+console.log(itemList.childNodes);
+
+// children
+itemList.children[0].style.backgroundColor = "red";
+
+// firstElementChild
+itemList.firstElementChild.textContent = "Kissa";
+
+// lastChild
+itemList.lastChild.textContent = "Entteri oli tässä";
+
+// lastElementChild
+itemList.lastElementChild.textContent = "Viimeinen elementti";
+
+
+// Siblings
+
+// nextSibling
+
+
+// nextElementSibling
+
+// previousSibling
+
+// previousElementSibling
