@@ -12,17 +12,37 @@
         }
         #friend-list {
             margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 5px auto;
+            width: 300px;
+            border-radius: 5px;
         }
         button {
             margin-top: 10px;
             padding: 5px 10px;
+            cursor: pointer;
+        }
+        .remove-btn {
+            background: red;
+            color: white;
+            border: none;
+            padding: 5px;
+            cursor: pointer;
         }
     </style>
 </head>
 <body>
-    <h2>Syötä 10 kaverin nimeä</h2>
+    <h2>Kaverilista</h2>
     <input type="text" id="nameInput" placeholder="Kirjoita nimi">
     <button onclick="addFriend()">Lisää</button>
+    <button onclick="sortFriends()">Lajittele</button>
     <ul id="friend-list"></ul>
 
 
