@@ -4,29 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kaverilista</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        #friend-list {
+            margin-top: 20px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+    </style>
 </head>
 <body>
-    <header id="main-header">
-        <h1 id="main-header-title">Kaverilista</h1>
-    </header>
-    <div class="container">
-        <div id="main">
-            <h2>Lisää jotakin</h2>
-            <form>
-                <input type="date" name="" id="">
-                <input type="text">
-                <input type="submit" value="Lisää">
-            </form>
-            <h2>Kohteet</h2>
-            <ul class="item-list">
-                <li class="list-item">Kohde 1</li>
-                <li class="list-item">Kohde 2</li>
-                <li class="list-item">Kohde 3</li>
-                <li class="list-item">Kohde 4</li>
-                <li class="list-item">Kohde 5</li>
-            </ul>
-        </div>
-    </div>
+    <h2>Syötä 10 kaverin nimeä</h2>
+    <input type="text" id="nameInput" placeholder="Kirjoita nimi">
+    <button onclick="addFriend()">Lisää</button>
+    <ul id="friend-list"></ul>
 
 
     <script src="main.js"></script>
