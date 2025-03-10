@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaverilista</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+        nav {
+            background: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+            font-size: 18px;
+        }
+        #friend-list {
+            margin-top: 20px;
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            display: flex;
+            justify-content: space-between;
+            background: #f4f4f4;
+            padding: 10px;
+            margin: 5px auto;
+            width: 300px;
+            border-radius: 5px;
+        }
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="versio1.html">Versio 1</a>
+        <a href="versio2.html">Versio 2</a>
+    </nav>
+    <h2>Kaverilista</h2>
+    <input type="text" id="nameInput" placeholder="Kirjoita nimi">
+    <button onclick="addFriend()">Lisää</button>
+    <button onclick="sortFriends()">Lajittele</button>
+    <ul id="friend-list"></ul>
+
+    <script src="main.js"></script>
+</body>
+</html>
