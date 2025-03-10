@@ -47,12 +47,17 @@
         <a href="versio2.html">Versio 2</a>
     </nav>
 
-    <h2>Kaverilista</h2>
-    <input type="text" id="nameInput" placeholder="Kirjoita nimi">
-    <button onclick="addFriend()">Lisää</button>
-    <button onclick="sortFriends()">Lajittele</button>
-    <ul id="friend-list"></ul>
+    <div class="container">
+        <h1>Syötä 10 kaverin nimi</h1>
+        <p>Syötä nimi ja paina "Lisää" jatkaaksesi!</p>
 
-    <script src="main.js"></script>
+        <input type="text" id="nameInput" placeholder="Syötä kaverin nimi">
+        <button onclick="addFriend()">Lisää kaveri</button>
+
+        <div id="friend-list" class="friend-list"></div>
+        <div id="gameStatus" class="game-over"></div>
+    </div>
+
+    <script src="main2.js"></script>
 </body>
 </html>
